@@ -18,8 +18,8 @@
     <main>
         <h1 class="text-center py-3">Ex03 - Check / Uncheck All</h1>
         <div class="container justify-content-center">
-            <button class="btn btn-primary">Check All</button>
-            <button class="btn btn-primary">UnCheck All</button>
+            <button class="btn btn-primary" onclick="checkAll()">Check All</button>
+            <button class="btn btn-primary" onclick="uncheckAll()">UnCheck All</button>
             <div class="list-group my-3">
                 <label class="list-group-item">
                     <input class="form-check-input me-1" type="checkbox" name="checkbox" value="">
@@ -51,5 +51,17 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
     </script>
 </body>
-
+    <script>
+        const checkboxes = document.querySelectorAll('.me-1');
+        function checkAll() {
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = true;
+            });
+        }
+        function uncheckAll() {
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        }
+    </script>
 </html>

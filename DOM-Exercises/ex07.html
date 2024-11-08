@@ -45,5 +45,16 @@
     </script>
 
 </body>
-
+<script>
+    const list_items = document.querySelectorAll('.list-group-item');
+    const trash_icons = document.querySelectorAll('.bi-trash-fill');
+    trash_icons.forEach((icon, index) => {
+        icon.style.cursor = 'pointer';
+        icon.addEventListener('click', function () {
+            if (confirm('Are you sure you want to delete this item?')){
+                list_items[index].remove();
+            }
+        });
+    });
+</script>
 </html>

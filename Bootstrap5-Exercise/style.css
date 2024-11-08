@@ -1,0 +1,15 @@
+#carouselId ol li{
+    list-style: none;
+}
+
+#about i.bi{
+    font-size: 5rem;
+}
+
+#store i.bi{
+    font-size: 5rem;
+}
+
+#payment i.bi{
+    font-size: 5rem;
+}

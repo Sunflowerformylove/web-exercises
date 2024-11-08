@@ -48,5 +48,24 @@
     </script>
 
 </body>
-
+    <script>
+        const listItems = document.querySelectorAll('.list-group-item');
+        const primary = document.querySelectorAll('.list-group-item-primary');
+        const keyword = document.getElementById('keyword');
+        keyword.addEventListener('input', function (e) {
+            const value = e.target.value;
+            listItems.forEach(item => {
+                if (item.textContent.toLowerCase().includes(value.toLowerCase())) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            if(value.trim() !== ''){
+                primary.forEach(item => {
+                    item.style.display = 'none';
+                });
+            }
+        });
+    </script>
 </html>

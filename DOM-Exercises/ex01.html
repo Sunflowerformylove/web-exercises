@@ -20,7 +20,7 @@
         <h1 class="text-center py-3">Ex01 - Active Icon</h1>
         <div class="container">
             <div class="text-center">
-                <img src="images/icon-1.png" alt="" class="img-fluid">
+                <img src="images/icon-1.png" alt="" class="img-fluid" onmouseover="active()" onmouseout="inactive()">
                 <h2>Coffee</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam dolores, dignissimos
                     vitae esse perspiciatis.</p>
@@ -34,5 +34,14 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
     </script>
 </body>
-
+<script>
+    function active(){
+        let img = document.querySelector(".img-fluid");
+        img.src = "./images/icon-1-active.png";
+    }
+    function inactive(){
+        let img = document.querySelector(".img-fluid");
+        img.src = "./images/icon-1.png";
+    }
+</script>
 </html>

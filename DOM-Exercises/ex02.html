@@ -55,5 +55,20 @@
     </script>
 
 </body>
-
+    <script>
+    let images = {
+        active: ["./images/icon-1-active.png", "./images/icon-2-active.png", "./images/icon-3-active.png", "./images/icon-4-active.png"],
+        inactive: ["./images/icon-1.png", "./images/icon-2.png", "./images/icon-3.png", "./images/icon-4.png"]
+    }
+    const img = document.querySelectorAll(".img-fluid");
+    img.forEach((element, index) => {
+        element.style.cursor = "pointer";
+        element.addEventListener("mouseover", () => {
+            element.src = images.active[index];
+        });
+        element.addEventListener("mouseout", () => {
+            element.src = images.inactive[index];
+        });
+    });
+    </script>
 </html>

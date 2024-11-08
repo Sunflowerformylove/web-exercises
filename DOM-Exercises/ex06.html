@@ -41,5 +41,18 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
     </script>
 </body>
-
+    <script>
+        const list = document.getElementById('myList');
+        const keyword = document.getElementById('keyword');
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const value = keyword.value;
+            const child = document.createElement('li');
+            child.className = 'list-group-item';
+            child.textContent = 'Item ' + value.trim();
+            list.appendChild(child);
+            keyword.value = '';
+        });
+    </script>
 </html>

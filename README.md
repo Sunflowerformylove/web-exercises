@@ -2,9 +2,7 @@
 
 ## Hướng dẫn sử dụng
 
-- **Cài đặt Node.js và npm**  
-  Tải về từ trang chủ: [Node.js Download](https://nodejs.org/en/download/prebuilt-installer)
-
+- **Cài đặt Node.js và npm**Tải về từ trang chủ: [Node.js Download](https://nodejs.org/en/download/prebuilt-installer)
 - **Cài đặt npx**
 
 ```bash
@@ -43,7 +41,7 @@
 
 ## Yêu cầu bài tập
 
-**1. Bootstrap-Ecommerce-Template**  
+**1. Bootstrap-Ecommerce-Template**
  Tạo template web tĩnh cho trang EShop.
 
 **2. DOM-Exercise**
@@ -59,23 +57,15 @@
 - **Ex09**: Lưu trạng thái của danh sách vào `localStorage`. Xóa tất cả các mục trong danh sách, có hỏi xác nhận trước khi xóa.
 - **Ex10**: Lấy dữ liệu từ `reqres.in` và hiển thị trên trang, bao gồm chức năng phân trang.
 
-**3. Express-Handlebars-Exercise**  
-Xây dựng một ứng dụng web đơn giản bằng Express, chuyển template web tĩnh thành web động, với dữ liệu từ `data.js`.
+**3. Express-Handlebars-Exercise**Xây dựng một ứng dụng web đơn giản bằng Express, chuyển template web tĩnh thành web động, với dữ liệu từ `data.js`.
 
-- **Task 1: Inspiring Quotes**  
-  Hiển thị danh sách cảm xúc; khi người dùng chọn cảm xúc, hiển thị ảnh quote tương ứng (mặc định hiển thị `default.jpg`).
-
-- **Task 2: Jars Saving**  
-  Cho phép người dùng nhập số tiền lương và hiển thị số tiền tương ứng phân bổ vào các “jars”.
-
-- **Task 3: TV Sales**  
-  Hiển thị danh sách `categories` và `products`. Cho phép người dùng chọn một `category` và hiển thị các sản phẩm thuộc danh mục đó (mặc định hiển thị tất cả sản phẩm).
-
-- **Task 4: Zodiac Characteristics**  
+- **Task 1: Inspiring Quotes**Hiển thị danh sách cảm xúc; khi người dùng chọn cảm xúc, hiển thị ảnh quote tương ứng (mặc định hiển thị `default.jpg`).
+- **Task 2: Jars Saving**Cho phép người dùng nhập số tiền lương và hiển thị số tiền tương ứng phân bổ vào các “jars”.
+- **Task 3: TV Sales**Hiển thị danh sách `categories` và `products`. Cho phép người dùng chọn một `category` và hiển thị các sản phẩm thuộc danh mục đó (mặc định hiển thị tất cả sản phẩm).
+- **Task 4: Zodiac Characteristics**
   Hiển thị danh sách các cung hoàng đạo (zodiac); cho phép người dùng chọn và xem thông tin chi tiết của từng cung hoàng đạo.
 
-**4. Sequelize-Postgres-Exercise**  
-Xây dựng ứng dụng web động kết nối với cơ sở dữ liệu PostgreSQL với các chức năng chính:
+**4. Sequelize-Postgres-Exercise**Xây dựng ứng dụng web động kết nối với cơ sở dữ liệu PostgreSQL với các chức năng chính:
 
 - Hiển thị danh sách các `categories`
 - Hiển thị danh sách các `tags`
@@ -85,8 +75,7 @@ Xây dựng ứng dụng web động kết nối với cơ sở dữ liệu Post
 - Xem chi tiết một `blog`
 - Tìm kiếm `blogs` theo từ khóa trong title, summary, hoặc description
 
-**5. CRUD-Exercise**  
-Xây dựng một ứng dụng web quản lý tài khoản người dùng với các chức năng chính:
+**5. CRUD-Exercise**Xây dựng một ứng dụng web quản lý tài khoản người dùng với các chức năng chính:
 
 - Thêm người dùng mới
 - Cập nhật thông tin người dùng

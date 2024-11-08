@@ -34,5 +34,22 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
     </script>
 </body>
-
+    <script>
+        const button = document.querySelector('button');
+        const list = document.getElementById('myList');
+        button.addEventListener('click', async function(){
+            list.innerHTML = '';
+            const response = await fetch('https://reqres.in/api/resources');
+            const data = await response.json();
+            console.log(data);
+            const true_data = data.data;
+            console.log(true_data);
+            true_data.forEach(item => {
+                const child = document.createElement('li');
+                child.className = 'list-group-item';
+                child.textContent = item.name + ' - ' + item.year;
+                list.appendChild(child);
+            });
+        });
+    </script>
 </html>
